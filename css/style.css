@@ -970,6 +970,14 @@ input[type="range"]::-moz-range-thumb {
 	cursor: pointer;
 }
 
+@media (max-width: 576px) {
+	.slider__control-item {
+		width: 16px;
+		height: 16px;
+	}
+}
+
+
 .slider__control-item_checked {
 	background-color: #C3C3C3;
 }
@@ -1058,25 +1066,27 @@ input[type="range"]::-moz-range-thumb {
 
 .payments__item::before {
 	content: "";
-	width: 20px;
+	width: 21px;
 	height: 20px;
 	position: absolute;
 	top: -3px;
 	left: -5px;
-	background-position: center center;
 	background-repeat: no-repeat;
 }
 
 .payments__item.qiwi::before {
-	background-image: url(../img/payments/qiwi.png);
+	background-image: url(../img/payments-spr.png);
+	background-position: 0 center;
 }
 
 .payments__item.yandex::before {
-	background-image: url(../img/payments/yandexmoney.png);
+	background-image: url(../img/payments-spr.png);
+	background-position: -21px center;
 }
 
 .payments__item.webmoney::before {
-	background-image: url(../img/payments/webmoney.png);
+	background-image: url(../img/payments-spr.png);
+	background-position: -42px center;
 }
 
 .contacts {
@@ -1122,16 +1132,17 @@ input[type="range"]::-moz-range-thumb {
 	position: absolute;
 	top: -1px;
 	left: -5px;
-	background-position: center center;
 	background-repeat: no-repeat;
 }
 
 .contacts__item.email::before {
-	background-image: url(../img/contacts/email.png);
+	background-image: url(../img/contacts-spr.png);
+	background-position: center -20px;
 }
 
 .contacts__item.vkontakte::before {
-	background-image: url(../img/contacts/vkontakte.png);
+	background-image: url(../img/contacts-spr.png);
+	background-position: center 0;
 }
 
 .contacts__link {
